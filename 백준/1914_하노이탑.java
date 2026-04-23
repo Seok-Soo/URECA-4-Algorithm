@@ -10,7 +10,7 @@ class Main{
 
         hanoi(onepan, 1 ,2,3 );
         
-
+        sc.close();
         
     }//psvm
 
