@@ -1,3 +1,4 @@
+package 실버;
 import java.io.*;
 import java.util.*;
 //스택문제
