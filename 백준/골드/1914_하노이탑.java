@@ -1,3 +1,4 @@
+package 골드;
 import java.util.Scanner;
 
 class Main{
