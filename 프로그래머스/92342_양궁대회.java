@@ -18,8 +18,8 @@ class Solution {
 
         dfs(0, n, answer);
 
-        if(max == Integer.MIN_VALUE){
-            return new int[]{-1};
+        if (max == Integer.MIN_VALUE) {
+            return new int[] { -1 };
         }
 
         return tmp;
