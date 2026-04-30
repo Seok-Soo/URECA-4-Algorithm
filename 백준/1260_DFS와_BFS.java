@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+// class Main {
 
     static int N, M, V;
     static int [][] graph;
