@@ -11,13 +11,14 @@ class Main{
     static void cut(int x, int y, int size){
         int color = paper[x][y];
         boolean same = true;
-        for( int i = x; i < size -1; i++){
-            for(int j = y; j < size-1; j++){
+        for( int i = x; i < x + size; i++){
+            for(int j = y; j < y + size; j++){
                 if(paper[i][j] != color){
                     same = false;
                     break;
                 }//if
             }//for
+            if(!same) break;
         }//for
 
         if (same == true){
