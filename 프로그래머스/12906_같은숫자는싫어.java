@@ -7,20 +7,12 @@ class Solution {
 
         List<Integer> list = new ArrayList<>();
 
-        Queue<Integer> queue = new ArrayDeque<>();
+        list.add(arr[0]);
 
-        for(int x : arr){
-            queue.add(x);
-        }
+        for(int i = 1; i < arr.length; i++){
 
-        list.add(queue.poll());
-
-        while(!queue.isEmpty()){
-
-            int now = queue.poll();
-
-            if(now != list.get(list.size()-1)){
-                list.add(now);
+            if(arr[i] != arr[i-1]){
+                list.add(arr[i]);
             }
         }
 
