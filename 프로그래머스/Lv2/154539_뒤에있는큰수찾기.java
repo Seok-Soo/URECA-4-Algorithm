@@ -1,5 +1,7 @@
 package 프로그래머스.Lv2;
 
+
+//2026.05.13 재풀이
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -8,25 +10,52 @@ class Solution {
         int[] answer = new int[numbers.length];
 
         Arrays.fill(answer, -1);
-        
-        Stack<Integer> stack = new Stack<>();
 
-        for( int i = 0; i < numbers.length; i++){
-            while (!stack.isEmpty() && numbers[stack.peek()] < numbers[i]) {
-                int n = stack.pop();
+        Stack<Integer> s = new Stack<>();
 
+        for(int i = 0; i < numbers.length; i++){
+            while(!s.isEmpty() && numbers[s.peek()] < numbers[i]){
+                int n = s.pop();
                 answer[n] = numbers[i];
-            }
-            stack.push(i);
-        }
+            }//while
+            s.push(i);
+        }//for
 
         return answer;
     }//psvm
-
-
 }//class
 
 
+//-----------------------------------------------------------------
+
+
+// import java.util.Arrays;
+// import java.util.Stack;
+
+// class Solution {
+//     public int[] solution(int[] numbers) {
+//         int[] answer = new int[numbers.length];
+
+//         Arrays.fill(answer, -1);
+        
+//         Stack<Integer> stack = new Stack<>();
+
+//         for( int i = 0; i < numbers.length; i++){
+//             while (!stack.isEmpty() && numbers[stack.peek()] < numbers[i]) {
+//                 int n = stack.pop();
+
+//                 answer[n] = numbers[i];
+//             }
+//             stack.push(i);
+//         }
+
+//         return answer;
+//     }//psvm
+
+
+// }//class
+
+//-----------------------------------------------------------------
 
 
 // 시간 초과
