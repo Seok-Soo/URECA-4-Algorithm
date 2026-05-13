@@ -1,4 +1,4 @@
-package 프로그래머스;
+package 프로그래머스.Lv2;
 
 // 난 실패작이야
 import java.util.*;
