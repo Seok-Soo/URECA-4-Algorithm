@@ -46,7 +46,8 @@ class Solution {
 
 
 
-// LocalDate는 24시 이후를 00시로 표기하기 때문에 종료 시간 이후에 방 정리시간을 처리하는데 문제가 생김
+// LocalDate는 24시 이후를 00시로 표기하기 때문에
+// 종료 시간 이후에 방 정리시간을 처리하는데 문제가 생김
 // import java.time.LocalTime;
 // import java.util.Arrays;
 // import java.util.PriorityQueue;
