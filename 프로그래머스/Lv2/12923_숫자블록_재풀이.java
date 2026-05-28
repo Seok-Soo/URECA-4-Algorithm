@@ -1,4 +1,4 @@
-package 프로그래머스;
+package 프로그래머스.Lv2;
 
 // begin 부터 end 까지 1씩 증가하며 진행. 이때 현재는 now
 // now의 값은 제외하고 now의 배수들만 end까지 now의 값으로 초기화
