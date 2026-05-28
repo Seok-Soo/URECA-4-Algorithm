@@ -28,6 +28,9 @@ class Solution {
                         block = (int)pair;
                         break;
                     }
+
+                    if( j < 10000000)
+                        block = j;
                 }
 
             }
