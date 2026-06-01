@@ -1,4 +1,4 @@
-package 프로그래머스;
+package 프로그래머스.Lv3;
 
 class Solution {
     public long solution(int n, int[] times) {
