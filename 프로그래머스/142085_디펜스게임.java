@@ -13,16 +13,13 @@ class Solution {
         //
         int idx = k; // 현재 진행하는 라운드
 
-        if(enemy.length <= k)
-            k = enemy.length;
+        if (k >= enemy.length) {
+            return enemy.length;
+        }
 
         for (int i = 0; i < k; i++) {
             unkillabledemonking.add(enemy[i]);
         }
-
-        // if (k >= enemy.length) {
-        //     return enemy.length;
-        // }
 
         while (idx < enemy.length) {
 
