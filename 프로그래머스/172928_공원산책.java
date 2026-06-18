@@ -93,6 +93,6 @@ class Solution {
 
         }
 
-        return answer;
+        return new int[]{answer[1], answer[0]};
     }
 }
