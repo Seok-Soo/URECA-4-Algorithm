@@ -1,4 +1,4 @@
-package 프로그래머스;
+package 프로그래머스.Lv2;
 
 class Solution {
     public int[] solution(int n) {
