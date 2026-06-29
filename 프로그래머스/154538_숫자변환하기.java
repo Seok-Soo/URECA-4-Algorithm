@@ -6,11 +6,11 @@ import java.util.Queue;
 class Solution {
     public int solution(int x, int y, int n) {
         
-        //DP
+        // DP
 
         // BFS에 노드를 이용하는 방법
 
-        //BFS 이용
+        // BFS 이용
         int dist[] = new int[y+1];
         boolean vist[] = new boolean[y+1];
 
