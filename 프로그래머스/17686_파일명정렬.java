@@ -67,3 +67,36 @@ class Solution {
     }
 }
 
+// 정규식 풀이
+// class Solution {
+
+//     public String[] solution(String[] files) {
+
+//         Pattern pattern = Pattern.compile("^(.*?)(\\d{1,5})(.*)$");
+
+//         Arrays.sort(files, (a, b) -> {
+
+//             Matcher ma = pattern.matcher(a);
+//             Matcher mb = pattern.matcher(b);
+
+//             ma.find();
+//             mb.find();
+
+//             String headA = ma.group(1);
+//             String headB = mb.group(1);
+
+//             int numberA = Integer.parseInt(ma.group(2));
+//             int numberB = Integer.parseInt(mb.group(2));
+
+//             int headCompare = headA.compareToIgnoreCase(headB);
+
+//             if (headCompare != 0) {
+//                 return headCompare;
+//             }
+
+//             return Integer.compare(numberA, numberB);
+//         });
+
+//         return files;
+//     }
+// }
