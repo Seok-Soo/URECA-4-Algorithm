@@ -28,9 +28,10 @@ class Solution {
                 }
             }
 
-            // 2진수 문자열을 다시 long으로 변환
+            // 2진수 문자열을 다시 long으로 변환함
             answer[idx] = Long.parseLong(sb.toString(), 2);
         }
     return answer;
     }
 }
+
