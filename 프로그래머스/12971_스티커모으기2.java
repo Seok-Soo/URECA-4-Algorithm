@@ -2,7 +2,6 @@ package 프로그래머스;
 
 class Solution {
     public int solution(int sticker[]) {
-        int answer = 0;
 
         int n = sticker.length;
 
